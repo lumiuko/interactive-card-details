@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Frontend Mentor | Interactive card details form</title>
+  </head>
+  <body>
+    <h1 class="sr-only">Interactive card details form</h1>
+    <main class="main">
+      <div class="card-preview">
+        <div class="card-back">
+          <span class="card-back-text" id="card-cvc-value">000</span>
+        </div>
+        <div class="card-front">
+          <img src="/card-logo.svg" class="card-front-logo" alt="Card logo" />
+          <span class="card-front-number" id="card-number-value">0000 0000 0000 0000</span>
+          <div class="card-front-bottom">
+            <span id="card-name-value">Jane Appleseed</span>
+            <div><span id="card-month-value">00</span>/<span id="card-year-value">00</span></div>
+          </div>
+        </div>
+      </div>
+      <form class="form" id="form">
+        <div class="input-group">
+          <label for="card-name">Cardholder Name</label>
+          <input class="card-name" id="card-name" type="text" placeholder="e.g. Jane Appleseed" data-bind="card-name-value" data-default="Jane Appleseed" />
+          <span class="error-text">Wrong format</span>
+        </div>
+        <div class="input-group">
+          <label for="card-number">Card Number</label>
+          <input id="card-number" type="text" placeholder="e.g. 1234 5678 9123 0000" data-bind="card-number-value" data-default="0000 0000 0000 0000" />
+          <span class="error-text">Wrong format, numbers only</span>
+        </div>
+        <div class="group-row">
+          <div class="input-group">
+            <label for="exp-month">Exp. Date (MM/YY)</label>
+            <div class="input-row">
+              <input id="exp-month" type="text" placeholder="MM" data-bind="card-month-value" data-default="00" />
+              <input id="exp-year" type="text" placeholder="YY" data-bind="card-year-value" data-default="00" />
+            </div>
+            <span class="error-text">Wrong format</span>
+          </div>
+          <div class="input-group">
+            <label for="cvc">CVC</label>
+            <input id="cvc" type="text" placeholder="e.g. 123" data-bind="card-cvc-value" data-default="000" />
+            <span class="error-text">Wrong format</span>
+          </div>
+        </div>
+        <button class="btn-submit">Confirm</button>
+      </form>
+      <div class="message-success hidden invisible" id="success-message">
+        <img src="/icon-complete.svg" alt="Complete icon" />
+        <h2 class="message-success-heading">Thank You!</h2>
+        <p class="message-success-text">We’ve added your card details</p>
+        <button class="btn-submit">Continue</button>
+      </div>
+    </main>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
