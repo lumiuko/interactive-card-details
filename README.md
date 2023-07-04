@@ -27,12 +27,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](https://i.imgur.com/oa9UM11.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/interactive-card-details-form-using-vanilla-js-0ymdoDnGTE](https://www.frontendmentor.io/solutions/interactive-card-details-form-using-vanilla-js-0ymdoDnGTE)
+- Live Site URL: [https://card-details-page.netlify.app/](https://card-details-page.netlify.app/)
 
 ## My process
 
@@ -46,5 +46,5 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@lumiuko](https://www.frontendmentor.io/profile/lumiuko)
+- Twitter - [@lumiuko](https://www.twitter.com/lumiuko)
