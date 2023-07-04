@@ -337,6 +337,14 @@ input:focus {
     margin-top: 0;
   }
 
+  .group-row {
+    gap: 1.25rem;
+  }
+
+  .input-row {
+    gap: 0.625rem;
+  }
+
   .btn-submit {
     margin-top: 2.5rem;
   }
