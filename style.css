@@ -183,10 +183,6 @@ input:focus {
   gap: 0.5rem;
 }
 
-.card-name {
-  text-transform: capitalize;
-}
-
 .error-text {
   display: none;
   font-size: 0.75rem;
